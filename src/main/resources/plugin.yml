@@ -1,0 +1,23 @@
+name: locator
+version: '1.0-SNAPSHOT'
+main: io.github.thebrightmountain.locator.Locator
+api-version: '1.21'
+
+softdepend:
+  - ProtocolLib
+  - ProtocolSupport
+  - ViaVersion
+  - ViaBackwards
+  - ViaRewind
+  - Geyser-Spigot
+
+commands:
+  locator:
+    description: Manage custom locator tracking
+    usage: /locator [add|remove|modify] [player|point] <name>
+    permission: locator.use
+
+permissions:
+  locator.use:
+    description: Allows use of the locator command
+    default: op

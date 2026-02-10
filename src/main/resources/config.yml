@@ -1,0 +1,25 @@
+# Locator Plugin Configuration
+
+# Whether stealth mechanics are enabled globally.
+# When enabled, players can hide from the locator by sneaking,
+# wearing a mob head/pumpkin, or having invisibility.
+stealth-enabled: true
+
+# Whether anchor waypoints are enabled globally.
+# When enabled, a waypoint is left at the player's last position
+# when they change dimensions.
+anchor-enabled: false
+
+# Distance to project waypoints from the viewer for angular precision.
+# Higher values = smoother movement on the locator bar.
+# The waypoint position is projected this many blocks away from the viewer
+# in the direction of the target, reducing integer rounding jitter.
+projection-distance: 50.0
+
+# How often waypoint positions are updated (in ticks). 1 tick = 50ms.
+# Lower = smoother but more packets sent. 1 is the smoothest.
+update-interval: 1
+
+# The waypoint transmit range set on tracked players' proxy waypoints.
+# This should be high enough to cover any distance on the server.
+transmit-range: 999999.0
